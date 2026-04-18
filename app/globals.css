@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0B0B0D;
+  --color-paper: #13131A;
+  --color-paper-2: #1A1A22;
+  --color-line: #26262F;
+  --color-line-2: #33333E;
+  --color-text: #E8E4DC;
+  --color-muted: #9A9284;
+  --color-dim: #6A6458;
+  --color-accent: #D4C9A8;
+  --color-glow: #5DCAA5;
+  --color-warm: #C9A87D;
+}
+
+:root {
+  --ink: #0B0B0D;
+  --paper: #13131A;
+  --paper-2: #1A1A22;
+  --line: #26262F;
+  --line-2: #33333E;
+  --text: #E8E4DC;
+  --muted: #9A9284;
+  --dim: #6A6458;
+  --accent: #D4C9A8;
+  --glow: #5DCAA5;
+  --warm: #C9A87D;
+  --font-serif: var(--font-fraunces);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@keyframes breath {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breath { animation: none !important; }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--ink);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-serif), Georgia, serif;
+  background: var(--ink);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+  outline: 2px solid var(--glow);
+  outline-offset: 2px;
+}
+
+em.accent {
+  font-style: italic;
+  color: var(--accent);
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+em.warm {
+  font-style: italic;
+  color: var(--warm);
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+em.glow {
+  font-style: normal;
+  color: var(--glow);
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.breath {
+  animation: breath 2.5s ease-in-out infinite;
+}
+
+/* ── Full-viewport canvas ─────────────────────────────────────── */
+
+.canvas {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: var(--ink);
+}
+
+/* 17-dot starfield */
+.canvas::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at  6%  8%, rgba(212,201,168,0.28) 1px,   transparent 1.5px),
+    radial-gradient(circle at 14% 22%, rgba(212,201,168,0.12) 1.5px, transparent 2px),
+    radial-gradient(circle at 22% 15%, rgba(212,201,168,0.18) 1px,   transparent 1.5px),
+    radial-gradient(circle at  9% 38%, rgba(212,201,168,0.22) 1px,   transparent 1.5px),
+    radial-gradient(circle at 17% 52%, rgba(212,201,168,0.15) 1.5px, transparent 2px),
+    radial-gradient(circle at  4% 68%, rgba(212,201,168,0.20) 1px,   transparent 1.5px),
+    radial-gradient(circle at 19% 78%, rgba(212,201,168,0.14) 1px,   transparent 1.5px),
+    radial-gradient(circle at 12% 92%, rgba(212,201,168,0.22) 1.5px, transparent 2px),
+    radial-gradient(circle at 82% 10%, rgba(212,201,168,0.16) 1px,   transparent 1.5px),
+    radial-gradient(circle at 91% 18%, rgba(212,201,168,0.28) 1.5px, transparent 2px),
+    radial-gradient(circle at 86% 34%, rgba(212,201,168,0.14) 1px,   transparent 1.5px),
+    radial-gradient(circle at 95% 48%, rgba(212,201,168,0.20) 1px,   transparent 1.5px),
+    radial-gradient(circle at 78% 62%, rgba(212,201,168,0.17) 1.5px, transparent 2px),
+    radial-gradient(circle at 88% 76%, rgba(212,201,168,0.25) 1px,   transparent 1.5px),
+    radial-gradient(circle at 94% 88%, rgba(212,201,168,0.13) 1px,   transparent 1.5px),
+    radial-gradient(circle at 46%  4%, rgba(212,201,168,0.10) 1px,   transparent 1.5px),
+    radial-gradient(circle at 62% 96%, rgba(212,201,168,0.12) 1.5px, transparent 2px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Soft radial glow behind content column */
+.canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 800px 600px at 50% 30%, rgba(212,201,168,0.035) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Centered content column ──────────────────────────────────── */
+
+.content-col {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 32px 48px;
+}
+
+@media (max-width: 639px) {
+  .content-col {
+    padding: 24px 20px 32px;
+  }
+}
+
+/* ── Skip link ────────────────────────────────────────────────── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--glow);
+  color: var(--ink);
+  padding: 8px 16px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  z-index: 9999;
+  transition: top 0.1s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Timeline hover ───────────────────────────────────────────── */
+
+.tl-node:hover .tl-dot {
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}

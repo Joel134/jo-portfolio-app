@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "siteName": "Joel John · Portfolio",
+    "liveStatus": "available for work"
+  },
+  "hero": {
+    "label": "—— who",
+    "headline": [
+      "Senior mobile developer.",
+      "Shipping fintech across borders,",
+      "exploring agents in Chennai."
+    ],
+    "headlineEmphasis": ["fintech", "agents"],
+    "ledeOpener": "Five years ago I wrote my first line of production code.",
+    "lede": "Since then, I've been shaped more by what I've built than anything else — the late nights, the quiet releases, the bugs that taught me more than any course ever did. I've shipped Flutter and Android apps from architecture to App Store and Play Console across multiple countries — owning every step from the first line of code to the final release. Along the way, every failure became a lesson, every edge case a teacher.",
+    "ledeEmphasis": ["across multiple countries"],
+    "kv": [
+      { "label": "Based", "value": "Chennai, India" },
+      { "label": "Role", "value": "Senior Software Engineer" },
+      { "label": "Years", "value": "5+ shipping" },
+      { "label": "Markets", "value": "multiple, live" }
+    ]
+  },
+  "timeline": {
+    "sectionNumber": "§ 01",
+    "sectionTitle": "the timeline",
+    "sectionSub": "2016 — present",
+    "nodes": [
+      {
+        "year": "2025",
+        "marker": "now",
+        "title": "Personal Intelligence Network",
+        "role": "self-hosted · personal",
+        "body": "A small set of Telegram agents running on my own VPS. Finance tracks Indian markets — superinvestor holdings, FII/DII flows, SIP health, Nifty signals, tax calendar. Growth tracks habits and journaling. Health does daily check-ins. Built with agentic coding tools and LLM backends.",
+        "bodyEmphasis": ["Finance", "Growth", "Health"],
+        "stack": [
+          "python",
+          "ubuntu vps",
+          "telegram",
+          "claude-code",
+          "opencode",
+          "windsurf",
+          "openclaw",
+          "minimax",
+          "groq"
+        ]
+      },
+      {
+        "year": "2024",
+        "marker": "current",
+        "title": "CheckoutX — iOS, Tap to Pay",
+        "role": "senior swe · surfboard",
+        "body": "Flutter app integrating Apple's Tap to Pay via Proximity APIs. One of the first companies to ship contactless iPhone payments in Sweden and Finland. Packaged across an in-house Melos mono-repo SDK. Owned the full release process on App Store Connect.",
+        "bodyEmphasis": ["One of the first", "in-house Melos mono-repo SDK"],
+        "stack": [
+          "flutter",
+          "swift",
+          "proximity apis",
+          "websockets",
+          "app store connect",
+          "melos"
+        ]
+      },
+      {
+        "year": "2023",
+        "marker": "current",
+        "title": "CheckoutX — Android & Terminal",
+        "role": "senior swe · surfboard",
+        "body": "POS and terminal app integrating Datecs, Newland, and MyPinPad SDKs via MethodChannel and EventChannel. Build flavors for multi-client SDK compatibility and varied terminal hardware. Live across multiple countries.",
+        "bodyEmphasis": ["multiple countries"],
+        "stack": [
+          "kotlin",
+          "flutter",
+          "android",
+          "datecs",
+          "newland",
+          "mypinpad",
+          "play console"
+        ]
+      },
+      {
+        "year": "2022",
+        "marker": "past",
+        "title": "Sweden Exchange",
+        "role": "surfboard · onshore",
+        "body": "Three-month onshore exchange in Gothenburg, Sweden. Embedded with local product and engineering teams at Surfboard Payments, learning their systems and culture from the inside.",
+        "bodyEmphasis": [],
+        "stack": []
+      },
+      {
+        "year": "2022",
+        "marker": "past",
+        "title": "LendHOPE Worldwide",
+        "role": "client work · flutter",
+        "body": "Donation finance app funding aspiring entrepreneurs. 1,000+ installs, raised $30K USD. Stripe integration with Apple Pay and Swish, group donations, wallet funding, offline access via Hive.",
+        "bodyEmphasis": ["1,000+ installs", "$30K USD"],
+        "stack": [
+          "flutter",
+          "stripe",
+          "firebase",
+          "hive",
+          "apple pay",
+          "swish"
+        ]
+      },
+      {
+        "year": "2021",
+        "marker": "past",
+        "title": "BMF Connect",
+        "role": "client work · flutter",
+        "body": "Learning Management System for a French school. Courses, assignments, 1:1 chat, push, offline sync.",
+        "bodyEmphasis": [],
+        "stack": ["flutter", "firebase", "hive", "realtime db"]
+      },
+      {
+        "year": "2020",
+        "marker": "past",
+        "title": "Joined Surfboard Payments",
+        "role": "mobile developer · chennai",
+        "body": "Joined as a mobile developer fresh out of college.",
+        "bodyEmphasis": [],
+        "stack": []
+      },
+      {
+        "year": "2016–2020",
+        "marker": "past",
+        "title": "B.Tech · Electronics & Instrumentation",
+        "role": "student · srm university",
+        "body": "Undergraduate degree at SRM Institute of Science and Technology, Chennai.",
+        "bodyEmphasis": [],
+        "stack": []
+      }
+    ]
+  },
+  "about": {
+    "sectionNumber": "§ 02",
+    "sectionTitle": "about me",
+    "sectionSub": "inside and out",
+    "paragraphs": [
+      {
+        "text": "Born in Delhi, roots in Kerala, currently in Chennai — my life has always moved between places, and I think that's shaped how I work with people. I grew up in a Christian family, and the values that stuck were simple ones: do good to others and trust that good finds its way back to you. Most of what I am, though, came from mentors and people I looked up to along the way, each leaving a little something behind.",
+        "tone": "primary",
+        "dropCap": true,
+        "emphasis": ["do good to others and trust that good finds its way back to you"]
+      },
+      {
+        "text": "At work and among friends, I'm usually the go-to person — the one called when something breaks, when something needs fixing, or when someone just needs to talk. I take that seriously. If I sign up for something, I own it end-to-end, and I try to show up the way I'd want someone to show up for me.",
+        "tone": "primary",
+        "dropCap": false,
+        "emphasis": ["go-to person"]
+      },
+      {
+        "text": "In a room, I'm quiet. A listener more than a talker. I like understanding people before I say anything, and I learn most from watching how others think. That patience extends to everything — I have a steady temperament, and things rarely rattle me. When something I'm curious about comes along, though, I go in deep.",
+        "tone": "primary",
+        "dropCap": false,
+        "emphasis": []
+      },
+      {
+        "text": "I'm still working on a few things. Saying no — protecting my own time without feeling guilty about it. Speaking up more, instead of only observing. And giving myself the silence I need to think clearly, without apologising for needing it.",
+        "tone": "quiet",
+        "dropCap": false,
+        "emphasis": ["Saying no", "Speaking up"]
+      },
+      {
+        "text": "Outside of work, you'll find me with the people I love, on a run or a game, or lost in a film, an album, or a quiet hobby. I track Indian markets a little too closely, automate things on my personal VPS, and read about blockchain internals when I want my mind to wander somewhere slow.",
+        "tone": "primary",
+        "dropCap": false,
+        "emphasis": []
+      }
+    ],
+    "signature": {
+      "place": "Chennai, 2025",
+      "note": "still figuring it out, cheerfully."
+    }
+  },
+  "facets": {
+    "items": [
+      {
+        "heading": "Values that stuck",
+        "body": "Family. Honesty. Learning something new in hand at all times. Autonomy over my time. Building things that last — or help someone, somewhere.",
+        "emphasis": ["Building things that last"]
+      },
+      {
+        "heading": "How I work best",
+        "body": "In silence, with space to think. Give me a problem worth solving and I'll disappear into it for a while — then come back with something considered, not just something shipped.",
+        "emphasis": ["silence"]
+      },
+      {
+        "heading": "What I do off the clock",
+        "body": "Time with the people closest to me. Runs, games, a bit of outdoors. Films and music in the quiet hours. The markets, always.",
+        "emphasis": ["The markets, always"]
+      },
+      {
+        "heading": "What I'm proud of",
+        "body": "Being the person someone calls at 2 AM when an app breaks. Finishing what I start. Not being the loudest in the room and still being heard.",
+        "emphasis": []
+      }
+    ]
+  },
+  "whatsNext": {
+    "sectionNumber": "§ 03",
+    "sectionTitle": "what's next",
+    "sectionSub": "exploring",
+    "spotlight": {
+      "label": "● exploring",
+      "text": "I'm exploring agents that build things while I sleep — a small world that keeps working when I don't.",
+      "highlight": "a small world that keeps working when I don't."
+    }
+  },
+  "stack": {
+    "stack": {
+      "heading": "The stack, today",
+      "tokens": [
+        "Dart",
+        "Kotlin",
+        "Swift",
+        "Flutter",
+        "Android SDK",
+        "iOS SDK",
+        "Firebase",
+        "Hive",
+        "Melos",
+        "Python",
+        "Ubuntu VPS"
+      ]
+    },
+    "tongues": {
+      "heading": "Tongues",
+      "items": ["English", "Hindi", "Malayalam", "Tamil"]
+    }
+  },
+  "footer": {
+    "name": "Joel John",
+    "tagline": "Chennai, India.",
+    "role": "Senior Software Engineer at Surfboard Payments.",
+    "status": "Currently answering email.",
+    "links": [
+      { "label": "→ joel6520@gmail.com", "href": "mailto:joel6520@gmail.com" },
+      { "label": "→ linkedin", "href": "https://www.linkedin.com/in/joel-john-a00715171/" },
+      { "label": "→ github", "href": "https://github.com/Joel134" },
+      { "label": "→ +91 75501 70293", "href": "tel:+917550170293" }
+    ]
+  }
+}
