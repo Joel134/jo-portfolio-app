@@ -138,10 +138,16 @@
     "sectionSub": "inside and out",
     "paragraphs": [
       {
-        "text": "Born in Delhi, roots in Kerala, currently in Chennai — my life has always moved between places, and I think that's shaped how I work with people. I grew up in a Christian family, and the values that stuck were simple ones: do good to others and trust that good finds its way back to you. Most of what I am, though, came from mentors and people I looked up to along the way, each leaving a little something behind.",
+        "text": "Born in Kerala, raised in Delhi, and now staying in Chennai - my life has always moved between places. I believe this constant movement has shaped my ability to connect and work effectively with diverse groups of people.",
         "tone": "primary",
         "dropCap": true,
-        "emphasis": ["do good to others and trust that good finds its way back to you"]
+        "emphasis": ["connect and work effectively with diverse groups of people"]
+      },
+      {
+        "text": "I've always lived by a simple principle: put good into the world, and trust that it eventually circles back to you. I see myself as a collection of the people I've admired — a blend of lessons and values passed down by the mentors who guided me, each leaving a lasting imprint on the person I am today.",
+        "tone": "primary",
+        "dropCap": false,
+        "emphasis": ["put good into the world, and trust that it eventually circles back to you"]
       },
       {
         "text": "At work and among friends, I'm usually the go-to person — the one called when something breaks, when something needs fixing, or when someone just needs to talk. I take that seriously. If I sign up for something, I own it end-to-end, and I try to show up the way I'd want someone to show up for me.",
